@@ -11,17 +11,27 @@
 @list-color-gfm: fade(#F92672, 80%);
 @hr-color-gfm: #268BD2;
 
-atom-text-editor, :host {
-  // background-color: @syntax-background-color;
-  // color: @syntax-text-color;
-  // line-height:1.4em;
-  // font-family: Menlo;
+// mac
+.platform-darwin {
+  atom-text-editor, :host {
+    line-height:1.3em;
+    font-family: Menlo;
+    font-size: 12px;
+  }
+}
 
-  // mac
+// win
+.platform-win32 {
+  atom-text-editor, :host {
+    line-height:1.3em;
+    font-family: consolas;
+    font-size: 12px;
+  }
+}
+
+atom-text-editor, :host {
   background-color: @bg-color;
   color: @text-color;
-  line-height:1.2em;
-  font-family: consolas;
 
   .invisible-character {
     color: @syntax-invisible-character-color;
