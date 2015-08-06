@@ -1,7 +1,7 @@
 {
   "name": "monokai-slate",
   "theme": "syntax",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "A Monokai syntax theme variant with some subtle, relaxing tweaks",
   "repository": {
     "type": "git",
