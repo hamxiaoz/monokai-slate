@@ -17,5 +17,5 @@ Based on the original Atom Monokai theme - https://github.com/kevinsawicki/monok
 - brighter highlighting
 ```
 
-![](https://github.com/hamxiaoz/monokai-slate/blob/master/preview/coffee.png)
-![](https://github.com/hamxiaoz/monokai-slate/blob/master/preview/md.png)
+![](https://raw.githubusercontent.com/hamxiaoz/monokai-slate/master/preview/coffee.png)
+![](https://raw.githubusercontent.com/hamxiaoz/monokai-slate/master/preview/md.png)
