@@ -1,0 +1,21 @@
+{
+  "name": "monokai-shade",
+  "theme": "syntax",
+  "version": "0.2.0",
+  "description": "A Monokai syntax theme variant with some subtle, relaxing tweaks",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hamxiaoz/monokai-slate"
+  },
+  "keywords": [
+    "monokai"
+  ],
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "bugs": {
+    "url": "https://github.com/hamxiaoz/monokai-slate/issues"
+  },
+  "homepage": "https://github.com/hamxiaoz/monokai-slate"
+}

@@ -1,0 +1,244 @@
+@import 'syntax-variables';
+
+// variable override
+@bg-color: #22282A;
+@text-color: #d0d0d0;
+@text-color-gfm: fade(@text-color, 70%);
+@string-color: #2aa198;
+@constant-color: #dc322f;
+@comment-color: fade(@text-color, 50%);
+@variable-color: #FD971F;
+@list-color-gfm: fade(#F92672, 80%);
+@hr-color-gfm: #268BD2;
+
+atom-text-editor, :host {
+  // background-color: @syntax-background-color;
+  // color: @syntax-text-color;
+  // line-height:1.4em;
+  // font-family: Menlo;
+
+  // mac
+  background-color: @bg-color;
+  color: @text-color;
+  line-height:1.2em;
+  font-family: consolas;
+
+  .invisible-character {
+    color: @syntax-invisible-character-color;
+  }
+
+  .indent-guide {
+    color: @syntax-indent-guide-color;
+  }
+
+  .wrap-guide {
+    border-left: 1px dashed @syntax-wrap-guide-color;
+    width:0;
+  }
+
+  .gutter {
+    background-color: @syntax-gutter-background-color;
+
+    .cursor-line {
+      background-color: @syntax-gutter-background-color-selected;
+    }
+  }
+
+  .line-number.cursor-line-no-selection {
+    background-color: @syntax-gutter-background-color-selected;
+  }
+
+  .invisible {
+    color: @syntax-text-color;
+  }
+
+  .cursor {
+    border-color: @syntax-cursor-color;
+  }
+
+  .selection .region {
+    background-color: @syntax-selection-color;
+  }
+
+  .search-results .marker .region {
+    background-color: transparent;
+    border: 1px solid @syntax-result-marker-color;
+  }
+
+  .search-results .marker.current-result .region {
+    border: 1px solid @syntax-result-marker-color-selected;
+  }
+
+  .gfm {
+    color: @text-color-gfm;
+
+    // >this is quote
+    .quote {
+      color: @string-color;
+    }
+
+    .markup {
+      &.heading {
+        color: @constant-color;
+        // font-weight: bold;
+      }
+
+      &.underline {
+        color: @comment-color;
+        text-decoration: underline;
+      }
+    }
+
+    .bold {
+      font-weight: bold;
+    }
+
+    .italic {
+      font-style: italic;
+    }
+
+    // `this is row`
+    .raw {
+      color: @string-color;
+    }
+
+    .variable.list {
+      color: @list-color-gfm;
+      font-weight: bold;
+    }
+
+    .link {
+      color: @comment-color;
+
+      .entity {
+        color: @variable-color;
+      }
+    }
+
+    .hr {
+      color: @hr-color-gfm;
+    }
+  }
+}
+
+.comment {
+  color: @comment-color;
+}
+
+.string {
+  color: @string-color;
+}
+
+.constant.numeric {
+  color: #AE81FF;
+}
+
+.constant.language {
+  color: #AE81FF;
+}
+
+.constant.character,
+.constant.escape,
+.constant.other {
+  color: @constant-color;
+}
+
+.keyword {
+  color: #F92672;
+}
+
+.keyword.operator.bracket,
+.keyword.operator.punctuation,
+ {
+  color: #FFFFFF;
+}
+
+.storage {
+  color: #F92672;
+}
+
+.storage.type {
+  font-style: italic;
+  color: #66D9EF;
+}
+
+.entity.name.class {
+  text-decoration: none;
+  color: #A6E22E;
+}
+
+.entity.other.inherited-class {
+  font-style: italic;
+  text-decoration: none;
+  color: #A6E22E;
+}
+
+// Prevent underlines from making their way into whitespace elements
+.leading-whitespace,
+.trailing-whitespace {
+  display: inline-block;
+}
+
+.entity.name.function {
+  color: #A6E22E;
+}
+
+.entity.name.instance {
+  color: #66D9EF;
+}
+
+// AZ variable same color as parameter
+.variable {
+  color: #FD971F;
+}
+
+.variable.parameter {
+  font-style: italic;
+  color: #FD971F;
+}
+
+.entity.name.tag {
+  color: #F92672;
+}
+
+.entity.other.attribute-name {
+  color: #A6E22E;
+}
+
+.support.function {
+  color: #66D9EF;
+}
+
+.support.function.decl {
+  color: #A6E22E;
+}
+
+.support.constant {
+  color: #66D9EF;
+}
+
+.support.type,
+.support.class {
+  font-style: italic;
+  color: #66D9EF;
+}
+
+.invalid {
+  color: #F8F8F0;
+  background-color: #F92672;
+}
+
+.invalid.deprecated {
+  color: #F8F8F0;
+  background-color: #AE81FF;
+}
+
+// Jade syntax
+.class.jade {
+  color: #AE81FF;
+}
+
+// 'this' Javascript
+.variable.language.js {
+  color: #F92672;
+}
