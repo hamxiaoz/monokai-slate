@@ -13,7 +13,7 @@
 
 // mac
 .platform-darwin {
-  atom-text-editor, :host {
+  atom-text-editor, atom-text-editor {
     line-height:1.3em;
     font-family: Menlo;
   }
@@ -21,13 +21,13 @@
 
 // win
 .platform-win32 {
-  atom-text-editor, :host {
+atom-text-editor, atom-text-editor {
     line-height:1.3em;
     font-family: consolas;
   }
 }
 
-atom-text-editor, :host {
+atom-text-editor, atom-text-editor {
   background-color: @bg-color;
   color: @text-color;
 
@@ -68,20 +68,20 @@ atom-text-editor, :host {
     background-color: @syntax-selection-color;
   }
 
-  .search-results .marker .region {
+  .search-results .syntax--marker .region {
     background-color: transparent;
     border: 1px solid @syntax-result-marker-color;
   }
 
-  .search-results .marker.current-result .region {
+  .search-results .syntax--marker.current-result .region {
     border: 1px solid @syntax-result-marker-color-selected;
   }
 
-  .gfm {
+  .syntax--gfm {
     color: @text-color-gfm;
 
     // >this is quote
-    .quote {
+    .syntax--quote {
       color: @string-color;
     }
 
@@ -97,85 +97,85 @@ atom-text-editor, :host {
       }
     }
 
-    .bold {
+    .syntax--bold {
       font-weight: bold;
     }
 
-    .italic {
+   .syntax--italic {
       font-style: italic;
     }
 
     // `this is row`
-    .raw {
+   .syntax--raw {
       color: @string-color;
     }
 
-    .variable.list {
+    .syntax--variable.list {
       color: @list-color-gfm;
       font-weight: bold;
     }
 
-    .link {
+   .syntax--link {
       color: @comment-color;
 
-      .entity {
+      .syntax--entity {
         color: @variable-color;
       }
     }
 
-    .hr {
+    .syntax--hr {
       color: @hr-color-gfm;
     }
   }
 }
 
-.comment {
+.syntax--comment {
   color: @comment-color;
 }
 
-.string {
+.syntax--string{
   color: @string-color;
 }
 
-.constant.numeric {
+.syntax--constant.syntax--numeric {
   color: #AE81FF;
 }
 
-.constant.language {
+.syntax--constant.syntax--language {
   color: #AE81FF;
 }
 
-.constant.character,
-.constant.escape,
-.constant.other {
+.syntax--constant.syntax--character,
+.syntax--constant.syntax--escape,
+.syntax--constant.syntax--other {
   color: @constant-color;
 }
 
-.keyword {
+.syntax--keyword {
   color: #F92672;
 }
 
-.keyword.operator.bracket,
-.keyword.operator.punctuation,
+.syntax--keyword.syntax--operator.syntax--bracket,
+.syntax--keyword.syntax--operator.syntax--punctuation,
  {
   color: #FFFFFF;
 }
 
-.storage {
+.syntax--storage {
   color: #F92672;
 }
 
-.storage.type {
+.syntax--storage.syntax--type {
   font-style: italic;
   color: #66D9EF;
 }
 
-.entity.name.class {
+.syntax--entity.syntax--name.syntax--class {
   text-decoration: none;
   color: #A6E22E;
 }
 
-.entity.other.inherited-class {
+.syntax--entity.syntax--other.syntax--inherited-class {
   font-style: italic;
   text-decoration: none;
   color: #A6E22E;
@@ -187,66 +187,66 @@ atom-text-editor, :host {
   display: inline-block;
 }
 
-.entity.name.function {
+.syntax--entity.syntax--name.syntax--function {
   color: #A6E22E;
 }
 
-.entity.name.instance {
+.syntax--entity.syntax--name.syntax--instance {
   color: #66D9EF;
 }
 
 // AZ variable same color as parameter
-.variable {
+.syntax--variable {
   color: #FD971F;
 }
 
-.variable.parameter {
+.syntax--variable.syntax--parameter {
   font-style: italic;
   color: #FD971F;
 }
 
-.entity.name.tag {
+.syntax--entity.syntax--name.syntax--tag {
   color: #F92672;
 }
 
-.entity.other.attribute-name {
+.syntax--entity.syntax--other.syntax--attribute-name {
   color: #A6E22E;
 }
 
-.support.function {
+.syntax--support.syntax--function {
   color: #66D9EF;
 }
 
-.support.function.decl {
+.syntax--support.syntax--function.syntax--decl {
   color: #A6E22E;
 }
 
-.support.constant {
+.syntax--support.syntax--constant {
   color: #66D9EF;
 }
 
-.support.type,
-.support.class {
+.syntax--support.syntax--type,
+.syntax--support.syntax--class {
   font-style: italic;
   color: #66D9EF;
 }
 
-.invalid {
+.syntax--invalid {
   color: #F8F8F0;
   background-color: #F92672;
 }
 
-.invalid.deprecated {
+.syntax--invalid.syntax--deprecated {
   color: #F8F8F0;
   background-color: #AE81FF;
 }
 
 // Jade syntax
-.class.jade {
+.syntax--class.syntax--jade {
   color: #AE81FF;
 }
 
 // 'this' Javascript
-.variable.language.js {
+.syntax--variable.syntax--language.syntax--js {
   color: #F92672;
 }
