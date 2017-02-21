@@ -85,13 +85,13 @@ atom-text-editor, atom-text-editor {
       color: @string-color;
     }
 
-    .markup {
-      &.heading {
+    .syntax--markup {
+      &.syntax--heading {
         color: @constant-color;
         // font-weight: bold;
       }
 
-      &.underline {
+      &.syntax--underline {
         color: @comment-color;
         text-decoration: underline;
       }
@@ -110,7 +110,7 @@ atom-text-editor, atom-text-editor {
       color: @string-color;
     }
 
-    .syntax--variable.list {
+    .syntax--variable.syntax--list {
       color: @list-color-gfm;
       font-weight: bold;
     }
