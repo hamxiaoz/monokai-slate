@@ -1,4 +1,5 @@
-**NOTE this is based on the monokai-shade theme with some color/font tweaks**
+**NOTE this is an updated fork of the monokai-slate theme https://github.com/hamxiaoz/monokai-slate **
+*NOTE this is based on the monokai-shade theme with some color/font tweaks*
 
 ```
 # monokai-shade theme
