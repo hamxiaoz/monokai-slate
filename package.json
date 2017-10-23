@@ -1,11 +1,11 @@
 {
-  "name": "monokai-slate",
+  "name": "monokai-slate2",
   "theme": "syntax",
-  "version": "0.6.0",
-  "description": "A Monokai syntax theme variant with some subtle, relaxing tweaks",
+  "version": "0.7.1",
+  "description": "A Monokai syntax theme variant with some subtle, relaxing tweaks - updated.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/hamxiaoz/monokai-slate"
+    "url": "https://github.com/polynoman/monokai-slate"
   },
   "keywords": [
     "monokai"
@@ -15,7 +15,7 @@
     "atom": ">0.50.0"
   },
   "bugs": {
-    "url": "https://github.com/hamxiaoz/monokai-slate/issues"
+    "url": "https://github.com/polynoman/monokai-slate/issues"
   },
-  "homepage": "https://github.com/hamxiaoz/monokai-slate"
+  "homepage": "https://github.com/polynoman/monokai-slate"
 }
